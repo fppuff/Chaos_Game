@@ -13,7 +13,7 @@ function setup() {
 function reset(){
   background(0);
   seeds = [];
-  const seedNumber = 5; //***** change seed number
+  const seedNumber = 4; //***** change seed number
   for (let i = 0; i < seedNumber; i++){
     // *****get random vector from a circle
     let angle = i * TWO_PI / seedNumber;
@@ -37,7 +37,7 @@ function reset(){
 
 function draw() {
   
-  if(frameCount % 1500 == 0){
+  if(frameCount % 500 == 0){
     reset();
   } 
  for (i = 0; i < 100; i++){ //****point cloud speed
